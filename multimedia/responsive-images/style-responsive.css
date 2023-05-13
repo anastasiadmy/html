@@ -1,0 +1,14 @@
+/* .img-blue {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 500px) {
+    .responsive {
+        padding: 0px 20px;
+        background-color: purple;
+    }
+} */
+img {
+    width: 100%;
+    /* width: 500px; */
+}

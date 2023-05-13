@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Responsive img</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- <link href="style-responsive.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <h1>Hello Dragon!</h1>
+        <!-- <div class="figure">
+            <img src="yellow-bird.png" alt="The head and torso of a bird is blue; it's wings are yellow" 
+                 width="700">
+            <p>My picture of a y-bird.</p>
+        </div>
+        <div class="figure" class="responsive">
+            <img class="img-blue" src="blue-bird.png" alt="The head and torso of a bird is blue;" 
+                 width="700">
+            <p>My picture of a b-bird.</p>
+        </div> -->
+        <!-- <div class="figure">
+            <img src="blue-bird.png" alt="The head and torso of a bird is blue;" 
+                 width="700">
+            <p>My picture of a blue-bird.</p>
+        </div> -->
+
+        <!-- <img src="https://www.simpleimageresizer.com/_uploads/photos/798a6b6c/dragon-480w_480x.png"
+             srcset="https://www.simpleimageresizer.com/_uploads/photos/798a6b6c/dragon-480w_480x.png 480w, 
+                     https://www.simpleimageresizer.com/_uploads/photos/798a6b6c/dragon-800w_1_800x.png 800w"
+             alt="Blue dragon on the grass"
+             sizes="(max-width: 600px) 480px,
+                    800px">
+        <p>My picture of a blue-dragon.</p> -->
+        <picture>
+            <source media="(max-width: 799px)" srcset="dragon1-420w.png">
+            <source media="(min-width: 800px)" srcset="dragon1-800w.png">
+            <img src="dragon1-800w.png" alt="Chris standing up holding his daughter Elva">
+        </picture>
+        <!-- Заміна зображення на обрізане, коли зменшується екран -->
+
+        <img srcset="img/dragon-480w.png 480w,
+                     img/dragon-800w.png 800w"
+             sizes="(max-width: 600px) 480px,
+                    800px"
+             src="img/dragon-800w.png" alt="Elva dressed as a fairy">
+        <!-- <script src="script.js"></script> -->
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Name</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <header>
+      <h1>Header</h1>
+
+      <video src="red-heart.mp4" controls>
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="red-heart.mp4">link to the video</a> instead.</p>
+      </video>
+
+    <video controls>
+        <source src="blue-heart.mp4" type="video/mp4">
+        <source src="blue-heart.webm" type="video/webm">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="blue-heart.mp4">link to the video</a> instead.</p>
+    </video>
+    
+    <video controls width="400" height="400" autoplay loop muted poster="poster.png">
+        <source src="blue-heart.mp4" type="video/mp4">
+        <source src="blue-heart.webm" type="video/webm">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="blue-heart.mp4">link to the video</a> instead.</p>
+    </video>
+<!-- якщо є autoplay то не видно заставку до відео -->
+    <video controls width="400" height="400" loop muted poster="poster.png">
+        <source src="blue-heart.mp4" type="video/mp4">
+        <source src="blue-heart.webm" type="video/webm">
+        <p>Your browser doesn't support HTML5 video. Here is a <a href="blue-heart.mp4">link to the video</a> instead.</p>
+    </video>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        <source src="audio.ogg" type="audio/ogg">
+        <p>Your browser doesn't support HTML5 audio. Here is a <a href="audio.mp3">link to the audio</a> instead.</p>
+      </audio>
+    
+      
+      <video controls width="400" height="400">
+        <source src="blue-heart.mp4" type="video/mp4">
+        <source src="blue-heart.webm" type="video/webm">
+        <track kind="subtitles" src="subtitle.vtt" srclang="en">
+        <track default src="subtitle.vtt">
+    </video>
+
+    <video controls>
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.mp4" type="video/mp4">
+        <source src="http://treehouse-code-samples.s3.amazonaws.com/html-video-and-audio/bridge.ogg" type="video/ogg">
+        <track label="English" kind="subtitles" src="subtitle.vtt" srclang="en">
+        <track default src="subtitle.vtt">
+      </video>
+
+  </body>
+</html>
