@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Valid</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Guess the right number!</h1>
+      <form action="my-check.html" method="GET">
+        <label for="guess">Enter a number between 1-10:</label>
+        <br>
+        <input type="number" name="guess" id="guess" required>
+        <br>
+        <input type="submit" id="submission" value="Submit">
+      </form>
+    </section>
+
+    <section class="overlay">
+      <form action="/my-check.html" method="GET">
+        <label for="allergies">Do you have any dietary restrictions?</label>
+        <br>
+        <input id="allergies" name="allergies" type="text" required>
+        <br>
+        <input type="submit" value="Submit">
+        <hr>
+        <form action="/example.html" method="POST">
+          <label for="guests">Enter # of guests:</label>
+          <input id="guests" name="guests" type="number" min="1" max="10">
+          <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <form action="/example.html" method="POST">
+          <label for="summary">Summarize your feelings in less than 250 characters</label>
+          <input id="summary" name="summary" type="text" minlength="5" maxlength="7" required>
+          <input type="submit" value="Submit">
+        </form>
+        <hr>
+        <form action="/example.html" method="POST">
+          <label for="payment">Credit Card Number (no spaces):</label>
+          <br>
+          <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+          <input type="submit" value="Submit">
+        </form>
+      </form>
+    </section>
+  </body>
+</html>
