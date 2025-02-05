@@ -35,7 +35,24 @@
 
         <p>We're glad you're here.</p>
       </article>
+# Calculator for LV Mass
 
+function calculateLVMass(LVEDD, IVSd, PWd) {
+    const LVEDD = parseFloat(LVEDD);
+    const IVS = parseFloat(IVSd);
+    const PW = parseFloat(PWd);
+    
+    const LVMass = 0.8 * (1.04 * (((LVEDD + IVS + PW) ** 3) - (LVEDD ** 3))) + 0.6;
+    return LVMass;
+}
+
+// Example usage
+const LVEDD = prompt("Enter LVEDD:");
+const IVSd = prompt("Enter IVSd:");
+const PWd = prompt("Enter PWd:");
+
+const result = calculateLVMass(LVEDD, IVSd, PWd);
+console.log("LV Mass:", result);
       <aside>
         <h2>Details</h2>
 
